@@ -20,4 +20,4 @@ requires:
 resources:
   homepage: https://github.com/sng2c/HTML-Element-AbsoluteXPath
   repository: https://github.com/sng2c/HTML-Element-AbsoluteXPath.git
-version: 0.001
+version: 0.002
