@@ -14,10 +14,9 @@ meta-spec:
   version: 1.4
 name: HTML-Element-AbsoluteXPath
 requires:
-  HTML::TreeBuilder: 0
-  strict: 0
-  warnings: 0
+  HTML::Element: 5.03
+  HTML::TreeBuilder: 5.03
 resources:
   homepage: https://github.com/sng2c/HTML-Element-AbsoluteXPath
   repository: https://github.com/sng2c/HTML-Element-AbsoluteXPath.git
-version: 0.002
+version: 0.003

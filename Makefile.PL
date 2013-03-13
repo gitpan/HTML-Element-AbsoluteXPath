@@ -22,11 +22,10 @@ my %WriteMakefileArgs = (
   "LICENSE" => "perl",
   "NAME" => "HTML::Element::AbsoluteXPath",
   "PREREQ_PM" => {
-    "HTML::TreeBuilder" => 0,
-    "strict" => 0,
-    "warnings" => 0
+    "HTML::Element" => "5.03",
+    "HTML::TreeBuilder" => "5.03"
   },
-  "VERSION" => "0.002",
+  "VERSION" => "0.003",
   "test" => {
     "TESTS" => "t/*.t"
   }

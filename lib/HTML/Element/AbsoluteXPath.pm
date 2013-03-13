@@ -4,7 +4,9 @@ package HTML::Element::AbsoluteXPath;
 
 # ABSTRACT: Add absolute XPath to HTML::Element support
 
-our $VERSION = '0.002'; # VERSION
+our $VERSION = '0.003'; # VERSION
+
+use HTML::Element;
 
 sub HTML::Element::abs_xpath{
     my $self = shift;
@@ -65,7 +67,7 @@ HTML::Element::AbsoluteXPath - Add absolute XPath to HTML::Element support
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =head1 DESCRIPTION
 
@@ -115,19 +117,19 @@ more
     say $found[0]->abs_xpath; # '/html[1]/body[1]/div[1]' 
     
     # get abs xpath with 'id' hint.
-    say $found[0]->abs_xpath('id'); #, "/html[1]/body[1]/div[\@id='test'][1]"
+    say $found[0]->abs_xpath('id'); #, "/html[1]/body[1]/div[@id='test'][1]"
     
     # get abs xpath with 'id' and 'class' hints.
-    say $found[0]->abs_xpath('id','class'); # "/html[1]/body[1]/div[\@id='test' and \@class='testclass'][1]"
+    say $found[0]->abs_xpath('id','class'); # "/html[1]/body[1]/div[@id='test' and @class='testclass'][1]"
     
     # get abs xpath hints for elem has just 'class' attr.
-    say $found[1]->abs_xpath('id','class'); # "/html[1]/body[1]/div[\@class='testclass'][2]"
+    say $found[1]->abs_xpath('id','class'); # "/html[1]/body[1]/div[@class='testclass'][2]"
     
     # get abs xpath with hints for elem has no attrs
     say $found[2]->abs_xpath('id','class'); # "/html[1]/body[1]/div[3]"
     
     # get abs xpath overwrapped one
-    say $found[2]->content->[0]->abs_xpath('id','class'); # "/html[1]/body[1]/div[3]/div[\@class='innerclass'][1]"
+    say $found[2]->content->[0]->abs_xpath('id','class'); # "/html[1]/body[1]/div[3]/div[@class='innerclass'][1]"
     
     # get abs xpath overwrapped sibling
     say $found[2]->content->[1]->abs_xpath('id','class'); # "/html[1]/body[1]/div[3]/div[2]"
