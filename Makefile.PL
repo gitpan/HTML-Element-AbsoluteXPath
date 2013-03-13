@@ -9,9 +9,10 @@ use ExtUtils::MakeMaker 6.30;
 
 
 my %WriteMakefileArgs = (
-  "ABSTRACT" => "Add absolute XPath to HTML::Element support",
+  "ABSTRACT" => "Add absolute XPath support to HTML::Element",
   "AUTHOR" => "HyeonSeung Kim <sng2nara\@gmail.com>",
   "BUILD_REQUIRES" => {
+    "HTML::TreeBuilder" => "5.03",
     "Test::More" => 0
   },
   "CONFIGURE_REQUIRES" => {
@@ -22,10 +23,9 @@ my %WriteMakefileArgs = (
   "LICENSE" => "perl",
   "NAME" => "HTML::Element::AbsoluteXPath",
   "PREREQ_PM" => {
-    "HTML::Element" => "5.03",
-    "HTML::TreeBuilder" => "5.03"
+    "HTML::Element" => "5.03"
   },
-  "VERSION" => "0.003",
+  "VERSION" => "0.004",
   "test" => {
     "TESTS" => "t/*.t"
   }

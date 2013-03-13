@@ -1,9 +1,9 @@
 
 
 This archive contains the distribution HTML-Element-AbsoluteXPath,
-version 0.003:
+version 0.004:
 
-  Add absolute XPath to HTML::Element support
+  Add absolute XPath support to HTML::Element
 
 This software is copyright (c) 2013 by HyeonSeung Kim.
 

@@ -1,8 +1,9 @@
 ---
-abstract: 'Add absolute XPath to HTML::Element support'
+abstract: 'Add absolute XPath support to HTML::Element'
 author:
   - 'HyeonSeung Kim <sng2nara@gmail.com>'
 build_requires:
+  HTML::TreeBuilder: 5.03
   Test::More: 0
 configure_requires:
   ExtUtils::MakeMaker: 6.30
@@ -15,8 +16,7 @@ meta-spec:
 name: HTML-Element-AbsoluteXPath
 requires:
   HTML::Element: 5.03
-  HTML::TreeBuilder: 5.03
 resources:
   homepage: https://github.com/sng2c/HTML-Element-AbsoluteXPath
   repository: https://github.com/sng2c/HTML-Element-AbsoluteXPath.git
-version: 0.003
+version: 0.004
