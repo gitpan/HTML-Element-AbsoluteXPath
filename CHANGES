@@ -2,9 +2,23 @@
 Changes from 2012-03-15 00:00:00 +0000 to present.
 ==================================================
 
-------------------------------------------
-version 0.005 at 2013-03-15 05:32:59 +0000
-------------------------------------------
+-----------------------------------------
+version 0.01 at 2013-03-15 05:41:09 +0000
+-----------------------------------------
+
+  Change: 9d36dc2bcd9d6f58287ba54f07cf283f95523704
+  Author: HyunSeung Kim <sng2nara@hanmail.net>
+  Date : 2013-03-15 14:40:45 +0000
+
+    fix bug 
+
+  Change: dd45bc3d765e7b7d73dd3a5ef4810ea23cea1af5
+  Author: HyunSeung Kim <sng2nara@hanmail.net>
+  Date : 2013-03-15 14:38:01 +0000
+
+    up to 0.01
+
+    add code to remove whitespaces of attributes. 
 
   Change: c635618f7144885dea15a303e92400cb5e3a16cc
   Author: HyunSeung Kim <sng2nara@hanmail.net>

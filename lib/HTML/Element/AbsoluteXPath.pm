@@ -4,7 +4,7 @@ package HTML::Element::AbsoluteXPath;
 
 # ABSTRACT: Add absolute XPath support to HTML::Element
 
-our $VERSION = '0.005'; # VERSION
+our $VERSION = '0.01'; # VERSION
 
 use HTML::Element 5.03;
 
@@ -21,7 +21,13 @@ sub HTML::Element::abs_xpath{
         my $p = $ee->parent();
         my %filters;
         foreach (sort @hint){
-            $filters{$_} = $ee->attr($_) if $ee->attr($_);
+            my $v = $ee->attr($_);
+            next unless $v;
+            $v =~ s/^\s+//;
+            $v =~ s/\s+$//;
+            $v =~ s/\s+/ /gs;
+            next unless $v;
+            $filters{$_} = $ee->attr($_);
         }   
         my @sib = $p->look_down(%filters);
 
@@ -65,7 +71,7 @@ HTML::Element::AbsoluteXPath - Add absolute XPath support to HTML::Element
 
 =head1 VERSION
 
-version 0.005
+version 0.01
 
 =head1 DESCRIPTION
 
