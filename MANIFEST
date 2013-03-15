@@ -9,3 +9,4 @@ dist.ini
 lib/HTML/Element/AbsoluteXPath.pm
 t/001.t
 t/002.t
+t/003.t

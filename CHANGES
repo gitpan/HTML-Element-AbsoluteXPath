@@ -3,8 +3,14 @@ Changes from 2012-03-15 00:00:00 +0000 to present.
 ==================================================
 
 -----------------------------------------
-version 0.01 at 2013-03-15 05:41:09 +0000
+version 0.02 at 2013-03-15 06:14:42 +0000
 -----------------------------------------
+
+  Change: b1a7a49b104589285f71d130d1d5fe84e1212479
+  Author: HyunSeung Kim <sng2nara@hanmail.net>
+  Date : 2013-03-15 15:13:46 +0000
+
+    fix error - comparing element 
 
   Change: 9d36dc2bcd9d6f58287ba54f07cf283f95523704
   Author: HyunSeung Kim <sng2nara@hanmail.net>
