@@ -1,10 +1,16 @@
 ==================================================
-Changes from 2012-03-13 00:00:00 +0000 to present.
+Changes from 2012-03-15 00:00:00 +0000 to present.
 ==================================================
 
 ------------------------------------------
-version 0.004 at 2013-03-13 08:24:13 +0000
+version 0.005 at 2013-03-15 05:32:59 +0000
 ------------------------------------------
+
+  Change: c635618f7144885dea15a303e92400cb5e3a16cc
+  Author: HyunSeung Kim <sng2nara@hanmail.net>
+  Date : 2013-03-15 14:32:33 +0000
+
+    remove necessary codes 
 
   Change: 819b7ee7af5119a33e0803ab23d2a9f398086fb0
   Author: HyunSeung Kim <sng2nara@hanmail.net>

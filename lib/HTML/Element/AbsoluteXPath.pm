@@ -4,7 +4,7 @@ package HTML::Element::AbsoluteXPath;
 
 # ABSTRACT: Add absolute XPath support to HTML::Element
 
-our $VERSION = '0.004'; # VERSION
+our $VERSION = '0.005'; # VERSION
 
 use HTML::Element 5.03;
 
@@ -36,11 +36,9 @@ sub HTML::Element::abs_xpath{
         foreach (keys %filters){
             next if $_ eq '_tag';
             my $v = $filters{$_};
-            next unless $v; 
             my $pat = "\@$_='$v'";
             push(@attrs,$pat);
         }   
-        my $_depth = '>' x $ee->depth();
 
         my $attr = ''; 
         $attr = "[".join(' and ',@attrs)."]" if @attrs;
@@ -67,7 +65,7 @@ HTML::Element::AbsoluteXPath - Add absolute XPath support to HTML::Element
 
 =head1 VERSION
 
-version 0.004
+version 0.005
 
 =head1 DESCRIPTION
 
